@@ -56,11 +56,11 @@ class DashboardPostController extends Controller
         ]);
 
         if ($request->file('image')) {
-            $validatedData['image'] = $request->file('image')->store('post-images');
+            $validatedData['image'] = $request->file('image')->store('post-images', 'public');
         }
 
         $validatedData['user_id'] = auth()->user()->id;
-        $validatedData['excerpt'] = Str::limit(strip_tags($request->body), 200);
+        $validatedData['excerpt'] = $request->body;
 
         Post::create($validatedData);
         return redirect('/dashboard/posts')->with('success', 'New post has been uploaded!');
@@ -119,11 +119,11 @@ class DashboardPostController extends Controller
             if ($request->oldImage) {
                 Storage::delete($request->oldImage);
             }
-            $validatedData['image'] = $request->file('image')->store('post-images');
+            $validatedData['image'] = $request->file('image')->store('post-images', 'public');
         }
 
         $validatedData['user_id'] = auth()->user()->id;
-        $validatedData['excerpt'] = Str::limit(strip_tags($request->body), 200);
+        $validatedData['excerpt'] = $request->body;
 
         Post::where('id', $post->id)
             ->update($validatedData);

@@ -17,6 +17,8 @@
     <!-- TRIX EDITOR -->
     <link rel="stylesheet" type="text/css" href="https://unpkg.com/trix@2.0.8/dist/trix.css">
     <script type="text/javascript" src="https://unpkg.com/trix@2.0.8/dist/trix.umd.min.js"></script>
+    <script src="https://dataonline.bmkg.go.id/admin/asset/plugins/ckeditor/ckeditor.js"></script>
+
 
     <style>
       trix-toolbar [data-trix-button-group="file-tools"]{
@@ -93,5 +95,25 @@
       <script src="https://cdn.jsdelivr.net/npm/feather-icons@4.28.0/dist/feather.min.js" integrity="sha384-uO3SXW5IuS1ZpFPKugNNWqTZRRglnUJK6UAZ/gxOX80nxEkN9NcGZTftn6RzhGWE" crossorigin="anonymous"></script>
       
       </script><script src="/js/dashboard.js"></script>
+      <script>
+
+CKEDITOR.replace( 'editor', {
+  
+	toolbar: [
+		{ name: 'clipboard', groups: [ 'clipboard', 'undo' ], items: [ 'Cut', 'Copy', 'Paste', 'PasteText', 'PasteFromWord', '-', 'Undo', 'Redo' ] },
+	{ name: 'editing', groups: [ 'find', 'selection', 'spellchecker' ], items: [ 'Scayt' ] },
+	{ name: 'links', items: [ 'Link', 'Unlink', 'Anchor' ] },
+	{ name: 'insert', items: [ 'Image', 'Table', 'HorizontalRule', 'SpecialChar' ] },
+	{ name: 'tools', items: [ 'Maximize' ] },
+	{ name: 'document', groups: [ 'mode', 'document', 'doctools' ], items: [ 'Source' ] },
+	{ name: 'others', items: [ '-' ] },
+	'/',
+	{ name: 'basicstyles', groups: [ 'basicstyles', 'cleanup' ], items: [ 'Bold', 'Italic', 'Strike', '-', 'RemoveFormat' ] },
+	{ name: 'paragraph', groups: [ 'list', 'indent', 'blocks', 'align', 'bidi' ], items: [ 'NumberedList', 'BulletedList', '-', 'Outdent', 'Indent', '-', 'Blockquote' ] },
+	{ name: 'styles', items: [ 'Styles', 'Format' ] },
+	{ name: 'about', items: [ 'About' ] }
+	]
+});
+</script>
   </body>
 </html>
