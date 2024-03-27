@@ -57,7 +57,7 @@
                 @enderror
                 {{-- <input id="body" type="hidden" name="body" value="{{ old('body') }}">
                 <trix-editor input="body"></trix-editor> --}}
-                <div id="editor">{!! old('body') !!}</div>
+                <textarea name="body" id="editor" class="form-control" cols="3">{!! old('body') !!}</textarea>
             </div>
             <button type="submit" class="btn btn-primary mb-3">Create Post</button>
           </form>
