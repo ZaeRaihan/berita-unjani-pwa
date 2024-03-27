@@ -3,14 +3,14 @@
 @section('container')
 
 <style>
-    @media only screen and (max-width: 600px) {
+    @media only screen and (max-width: 1200px) {
         img{
             width: 100% !important;
             height: 100% !important;
         }
     }
     p{
-        font-family: "Rockwell", serif;
+        font-family: "Rockwell", serif !important;
     }
 </style>
 

@@ -3,7 +3,7 @@
 @section('container')
 <style>
     p{
-        font-family: "Rockwell", serif;
+        font-family: "Rockwell", serif !important;;
     }
 </style>
 
