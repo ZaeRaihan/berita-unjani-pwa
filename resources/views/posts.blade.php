@@ -1,6 +1,11 @@
 @extends('layouts.main')
 
 @section('container')
+<style>
+    p{
+        font-family: "Rockwell", serif;
+    }
+</style>
 
 <div class="row justify-content-center">
     <div class="col-md-3">
