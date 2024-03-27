@@ -8,6 +8,9 @@
             width: 100% !important;
             height: 100% !important;
         }
+        p{
+            font-family: "Rockwell", serif !important;
+        }
     }
     p{
         font-family: "Rockwell", serif !important;
