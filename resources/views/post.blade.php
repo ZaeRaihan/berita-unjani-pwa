@@ -9,6 +9,9 @@
             height: 100% !important;
         }
     }
+    p{
+        font-family: "Rockwell", serif;
+    }
 </style>
 
 <div class="container">
