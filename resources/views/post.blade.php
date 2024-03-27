@@ -9,11 +9,11 @@
             height: 100% !important;
         }
         p{
-            font-family: "Rockwell", serif !important;
+            font-family: "Open Sans", Arial, sans-serif !important;
         }
     }
     p{
-        font-family: "Rockwell", serif !important;
+        font-family: "Open Sans", Arial, sans-serif !important;
     }
 </style>
 
@@ -43,7 +43,7 @@
                     </div>
                     @endif
 
-                    <article class="my-3 fs-5">
+                    <article class="my-3 fs-5" style="font-family: 'Open Sans', sans-serif;">
                         {!! $post->body !!}
                     </article>
                 </div>
