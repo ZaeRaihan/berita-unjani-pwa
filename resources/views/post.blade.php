@@ -10,10 +10,13 @@
         }
         p{
             font-family: "Open Sans", Arial, sans-serif !important;
+            color: #000000 !important; /* Warna font gelap (hitam) */
         }
     }
     p{
         font-family: "Open Sans", Arial, sans-serif !important;
+        color: #000000 !important; /* Warna font gelap (hitam) */
+        font-weight: normal
     }
 </style>
 
