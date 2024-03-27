@@ -49,7 +49,7 @@
                             </a>
                         </h6>
                         
-                        <p class="card-text excerpt">{{ strlen($post->excerpt) > 70 ? substr($post->excerpt, 0, 70) . '...' : $post->excerpt }}</p>
+                        <p class="card-text excerpt">{!! strlen($post->excerpt) > 70 ? substr($post->excerpt, 0, 70) . '...' : $post->excerpt !!}</p>
                     </div>
                     <div class="card-footer" style="background-color: inherit; border-top: none; padding-top:0;">
                         <a href="/posts/{{ $post->slug }}" class="btn btn-success">Selengkapnya</a>

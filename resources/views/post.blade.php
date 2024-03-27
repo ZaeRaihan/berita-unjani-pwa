@@ -2,6 +2,15 @@
 
 @section('container')
 
+<style>
+    @media only screen and (max-width: 600px) {
+        img{
+            width: 100% !important;
+            height: 100% !important;
+        }
+    }
+</style>
+
 <div class="container">
     <div class="row">
         <div class="col-lg-8">
