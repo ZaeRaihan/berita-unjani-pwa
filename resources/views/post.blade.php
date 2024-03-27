@@ -2,24 +2,6 @@
 
 @section('container')
 
-<style>
-    @media only screen and (max-width: 1200px) {
-        img{
-            width: 100% !important;
-            height: 100% !important;
-        }
-        p{
-            font-family: "Open Sans", Arial, sans-serif !important;
-            color: #000000 !important; /* Warna font gelap (hitam) */
-        }
-    }
-    p{
-        font-family: "Open Sans", Arial, sans-serif !important;
-        color: #000000 !important; /* Warna font gelap (hitam) */
-        font-weight: normal
-    }
-</style>
-
 <div class="container">
     <div class="row">
         <div class="col-lg-8">
