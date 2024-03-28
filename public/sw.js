@@ -13,6 +13,7 @@ const filesToCache = [
     "/",
     "/posts",
     "/about",
+    "/categories",
     "/css/style.css",
     "/css/stylepost.css",
     "/css/owl.carousel.min.css",
