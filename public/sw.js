@@ -9,7 +9,26 @@ self.addEventListener("install", function (event) {
     event.waitUntil(preLoad());
 });
 
-const filesToCache = ["/", "/css/*", "/js/*", "/img/*", "/offline.html"];
+const filesToCache = [
+    "/",
+    "/posts",
+    "/about",
+    "/css/style.css",
+    "/css/stylepost.css",
+    "/css/owl.carousel.min.css",
+    "/css/bootstrap.min.css.map",
+    "/css/bootstrap.min.css",
+    "/js/main.js",
+    "/js/bootstrap.min.js",
+    "/js/jquery-3.3.1.min.js",
+    "/js/jquery.sticky.js",
+    "/js/owl.carousel.min.js",
+    "/js/popper.min.js",
+    "/img/unjani3.png",
+    "/img/unjanilite.png",
+    "/img/unjanismart.png",
+    "/offline.html",
+];
 
 const checkResponse = function (request) {
     return new Promise(function (fulfill, reject) {
