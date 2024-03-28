@@ -728,6 +728,6 @@ footer a {
 }
 p {
     font-family: "Open Sans", Arial, sans-serif !important;
-    color: #000000 !important; /* Warna font gelap (hitam) */
+    color: #000000; /* Warna font gelap (hitam) */
     font-weight: normal;
 }

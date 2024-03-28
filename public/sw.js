@@ -28,6 +28,10 @@ const filesToCache = [
     "/img/unjani3.png",
     "/img/unjanilite.png",
     "/img/unjanismart.png",
+    "/icomoon/icomoon.eot",
+    "/icomoon/icomoon.svg",
+    "/icomoon/icomoon.ttf",
+    "/icomoon/icomoon.woff",
     "/offline.html",
 ];
 
