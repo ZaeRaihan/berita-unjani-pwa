@@ -32,6 +32,7 @@ const filesToCache = [
     "/icomoon/icomoon.svg",
     "/icomoon/icomoon.ttf",
     "/icomoon/icomoon.woff",
+    "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css",
     "/offline.html",
 ];
 

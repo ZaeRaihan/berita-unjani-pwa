@@ -11,7 +11,9 @@
 
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet"/>
 
-    <link rel="stylesheet" href="/icomoon/style.css" /> <!-- ICON -->
+    <!-- ICON -->
+    <link rel="stylesheet" href="/icomoon/style.css" /> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
     <link rel="stylesheet" href="/css/owl.carousel.min.css" />
 
@@ -31,7 +33,7 @@
     <div class="site-mobile-menu site-navbar-target">
         <div class="site-mobile-menu-header">
           <div class="site-mobile-menu-close mt-3">
-            <span class="icon-close2 js-menu-toggle"></span>
+            <span class="fas fa-times js-menu-toggle"></span>
           </div>
         </div>
         <div class="site-mobile-menu-body"></div>
@@ -211,17 +213,17 @@
   
                   <li class="social">
                     <a href="#contact-section" class="nav-link"
-                      ><span class="icon-facebook"></span
+                      ><span class="fab fa-facebook"></span
                     ></a>
                   </li>
                   <li class="social">
                     <a href="#contact-section" class="nav-link"
-                      ><span class="icon-instagram"></span
+                      ><span class="fab fa-instagram"></span
                     ></a>
                   </li>
                   <li class="social">
                     <a href="#contact-section" class="nav-link"
-                      ><span class="icon-youtube"></span
+                      ><span class="fab fa-youtube"></span
                     ></a>
                   </li>
                 </ul>
@@ -233,8 +235,7 @@
               style="position: relative; top: 3px"
             >
               <a href="#" class="site-menu-toggle js-menu-toggle float-right"
-                ><span class="icon-menu h3"></span
-              ></a>
+                ><span class="fas fa-bars fa-lg"></span></a>
             </div>
           </div>
         </div>
@@ -275,7 +276,7 @@
 
     <!-- SCROLL TOP -->
     <button onclick="topFunction()" id="scrollToTopBtn" title="Go to top">
-      <span class="icon-arrow-up"></span>
+      <span class="fas fa-arrow-up"></span>
     </button>
   
     <footer>
@@ -292,18 +293,18 @@
             <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
               <h5 class="text-uppercase">HUBUNGI KAMI</h5>
               <ul class="list-unstyled">
-                  <li><span class="icon-whatsapp"></span> 022-6656190 (Call)</li>
-                  <li><span class="icon-facebook"></span> PMB 0811 249 7890 (WA only)</li>
-                  <li><span class="icon-facebook"></span> PMB 0811 429 7899 (WA only)</li>
-                  <li><span class="icon-envelope"></span> humas@unjani.ac.id</li>
+                  <li><span class="fab fa-whatsapp"></span> 022-6656190 (Call)</li>
+                  <li><span class="fab fa-facebook"></span> PMB 0811 249 7890 (WA only)</li>
+                  <li><span class="fab fa-facebook"></span> PMB 0811 429 7899 (WA only)</li>
+                  <li><span class="fab fa-envelope"></span> humas@unjani.ac.id</li>
               </ul>
           </div>          
               <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
                 <h5 class="text-uppercase">MORE</h5>
                 <ul class="list-inline" style="padding-left: 0;">
-                    <li class="list-inline-item" style="font-size: large"><a href="#"><span class="icon-facebook"></span></a></li>
-                    <li class="list-inline-item" style="font-size: large"><a href="#"><span class="icon-instagram"></span></a></li>
-                    <li class="list-inline-item" style="font-size: large"><a href="#"><span class="icon-twitter"></span></a></li>
+                    <li class="list-inline-item" style="font-size: large"><a href="#"><span class="fab fa-facebook"></span></a></li>
+                    <li class="list-inline-item" style="font-size: large"><a href="#"><span class="fab fa-instagram"></span></a></li>
+                    <li class="list-inline-item" style="font-size: large"><a href="#"><span class="fab fa-twitter"></span></a></li>
                 </ul>
             </div>
           </div>
