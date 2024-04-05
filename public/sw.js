@@ -97,17 +97,22 @@ self.addEventListener('install', evt => {
 // fetch event
 // untuk dynamic asset kayak di post yang butuh data DB
 self.addEventListener('fetch', evt => {
-    evt.respondWith(
-        caches.match(evt.request).then(cacheRes => {
-        return cacheRes || fetch(evt.request).then(fetchRes => {
-            return caches.open(dynamicCacheName).then(cache => {
-            cache.put(evt.request.url, fetchRes.clone());
-            return fetchRes;
-            })
-        });
-        })
-    );
+  evt.respondWith(
+      caches.match(evt.request).then(cacheRes => {
+          if (!cacheRes || cacheRes.status === 404) {
+              return caches.match('offline.html'); //jika response adalah 404 maka akan membawa ke page offline.html
+          } else {
+              return cacheRes || fetch(evt.request).then(fetchRes => {
+                  return caches.open(dynamicCacheName).then(cache => {
+                      cache.put(evt.request.url, fetchRes.clone());
+                      return fetchRes;
+                  });
+              });
+          }
+      })
+  );
 });
+
 
 // activate event
 // service worker akan membersihkan cache-cache yang tidak lagi digunakan setelah versi service worker yang baru diinstal aktif untuk static dan dynamic asset 
