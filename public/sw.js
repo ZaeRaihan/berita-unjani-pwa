@@ -99,16 +99,18 @@ self.addEventListener('install', evt => {
 self.addEventListener('fetch', evt => {
   evt.respondWith(
       caches.match(evt.request).then(cacheRes => {
-          if (!cacheRes || cacheRes.status === 404) {
-              return caches.match('offline.html'); //jika response adalah 404 maka akan membawa ke page offline.html
-          } else {
-              return cacheRes || fetch(evt.request).then(fetchRes => {
+          return cacheRes || fetch(evt.request).then(fetchRes => {
+              if (fetchRes.status === 404) {
+                  return caches.match('offline.html');
+              } else {
                   return caches.open(dynamicCacheName).then(cache => {
                       cache.put(evt.request.url, fetchRes.clone());
                       return fetchRes;
                   });
-              });
-          }
+              }
+          }).catch(() => {
+              return caches.match('offline.html');
+          });
       })
   );
 });
