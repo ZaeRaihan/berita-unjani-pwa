@@ -159,7 +159,7 @@
                 <a href="#media-section" class="nav-link">Media</a>
                 <ul class="dropdown">
                     <li class="has-children">
-                        <a href="/posts" class="nav-link {{ ($active === "posts" || $active === "categories" || $active === "about") ? 'active' : '' }}">BERITA UNJANI</a>
+                        <a class="nav-link {{ ($active === "posts" || $active === "categories" || $active === "about") ? 'active' : '' }}">BERITA UNJANI</a>
                         <ul class="dropdown">
                             <li><a href="/posts" class="nav-link {{ ($active === "posts") ? 'active' : '' }}">ALL POSTS</a></li>
                             <li><a href="/categories" class="nav-link {{ ($active === "categories") ? 'active' : '' }}">KATEGORI</a></li>

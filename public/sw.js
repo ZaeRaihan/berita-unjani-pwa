@@ -1,11 +1,9 @@
 const staticCacheName =  'static-v1';
 const dynamicCacheName = 'site-dynamic-v1';
+const excludedUrls = ['/register', '/login', '/dashboard', '/dashboard/posts', '/dashboard/posts/create', '/posts']; //urls that not been cached
 
 const filesToCache = [
     "/",
-    "/posts",
-    "/about",
-    "/categories",
     "/css/style.css",
     "/css/stylepost.css",
     "/css/owl.carousel.min.css",
@@ -28,61 +26,6 @@ const filesToCache = [
     "/offline.html",
 ];
 
-// const preLoad = function () {
-//     return caches.open(staticCacheName).then(function (cache) {
-//         // caching index and important routes
-//         return cache.addAll(filesToCache);
-//     });
-// };
-
-// self.addEventListener("install", function (event) {
-//     event.waitUntil(preLoad());
-// });
-
-// const checkResponse = function (request) {
-//     return new Promise(function (fulfill, reject) {
-//         fetch(request).then(function (response) {
-//             if (response.status !== 404) {
-//                 fulfill(response);
-//             } else {
-//                 reject();
-//             }
-//         }, reject);
-//     });
-// };
-
-// const addToCache = function (request) {
-//     return caches.open(staticCacheName).then(function (cache) {
-//         return fetch(request).then(function (response) {
-//             return cache.put(request, response);
-//         });
-//     });
-// };
-
-// const returnFromCache = function (request) {
-//     return caches.open(staticCacheName).then(function (cache) {
-//         return cache.match(request).then(function (matching) {
-//             if (!matching || matching.status === 404) {
-//                 return cache.match("offline.html");
-//             } else {
-//                 return matching;
-//             }
-//         });
-//     });
-// };
-
-// Kode Sebelumnya
-// self.addEventListener("fetch", function (event) {
-//     event.respondWith(
-//         checkResponse(event.request).catch(function () {
-//             return returnFromCache(event.request);
-//         })
-//     );
-//     if (!event.request.url.startsWith("http")) {
-//         event.waitUntil(addToCache(event.request));
-//     }
-// });
-
 //activate event
 self.addEventListener('install', evt => {
     console.log('service worker installed');
@@ -95,16 +38,60 @@ self.addEventListener('install', evt => {
   });
 
 // fetch event
-// untuk dynamic asset kayak di post yang butuh data DB
 self.addEventListener('fetch', evt => {
+  const { request } = evt;
+  const url = new URL(request.url);
+
+  // Check if the request is excluded from caching
+  if (excludedUrls.includes(url.pathname)) {
+      // If the request is to an excluded URL, bypass caching
+      evt.respondWith(fetch(request));
+      return;
+  }
+
+  // fetch directly from the network if on the main index page
+  if (url.pathname === '/') {
+      evt.respondWith(
+          // Try to fetch from network
+          fetch(request)
+              .then(fetchRes => {
+                  // Clone the response to cache it
+                  const responseClone = fetchRes.clone();
+                  caches.open(staticCacheName).then(cache => {
+                      cache.put(request, responseClone);
+                  });
+                  return fetchRes;
+              })
+              .catch(() => {
+                  // If fetching from network fails, try to serve from cache
+                  return caches.match(request)
+                      .then(cacheRes => {
+                          if (cacheRes) {
+                              // If cached response found, return it
+                              return cacheRes;
+                          } else {
+                              // If no cached response found, return offline page
+                              return caches.match('offline.html');
+                          }
+                      })
+                      .catch(() => {
+                          // If error occurs while serving from cache, return offline page
+                          return caches.match('offline.html');
+                      });
+              })
+      );
+      return;
+  }
+
+  // For other requests, try cache first, then network
   evt.respondWith(
-      caches.match(evt.request).then(cacheRes => {
-          return cacheRes || fetch(evt.request).then(fetchRes => {
+      caches.match(request).then(cacheRes => {
+          return cacheRes || fetch(request).then(fetchRes => {
               if (fetchRes.status === 404) {
                   return caches.match('offline.html');
               } else {
                   return caches.open(dynamicCacheName).then(cache => {
-                      cache.put(evt.request.url, fetchRes.clone());
+                      cache.put(request.url, fetchRes.clone());
                       return fetchRes;
                   });
               }
@@ -114,7 +101,6 @@ self.addEventListener('fetch', evt => {
       })
   );
 });
-
 
 // activate event
 // service worker akan membersihkan cache-cache yang tidak lagi digunakan setelah versi service worker yang baru diinstal aktif untuk static dan dynamic asset 
@@ -127,4 +113,14 @@ self.addEventListener('activate', evt => {
         );
       })
     );
+});
+
+self.addEventListener('/logout', evt => {
+  return caches.keys().then(keys => {
+    return Promise.all(keys.map(key => {
+      if (key === dynamicCacheName) {
+        return caches.delete(key);
+      }
+    }));
+  });
 });
