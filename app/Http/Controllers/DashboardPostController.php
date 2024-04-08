@@ -9,6 +9,7 @@ use Illuminate\Http\Request;
 use \Cviebrock\EloquentSluggable\Services\SlugService;
 use Illuminate\Support\Str;
 use Illuminate\Support\Facades\Storage;
+use App\Events\PostCreatedNotification;
 
 class DashboardPostController extends Controller
 {
@@ -63,6 +64,13 @@ class DashboardPostController extends Controller
         $validatedData['excerpt'] = $request->body;
 
         Post::create($validatedData);
+            // implement  event
+        $data = [
+            'title' => $validatedData['title'],
+            'author' => auth()->user()->name,
+        ];
+        event(new PostCreatedNotification($data));
+
         return redirect('/dashboard/posts')->with('success', 'New post has been uploaded!');
     }
 

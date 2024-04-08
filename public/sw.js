@@ -1,6 +1,6 @@
 const staticCacheName =  'static-v1';
 const dynamicCacheName = 'site-dynamic-v1';
-const excludedUrls = ['/register', '/login', '/dashboard', '/dashboard/posts', '/dashboard/posts/create', '/posts']; //urls that not been cached
+const excludedUrls = ['/register', '/login', '/dashboard']; //urls that not been cached
 
 const filesToCache = [
     "/",
@@ -43,7 +43,7 @@ self.addEventListener('fetch', evt => {
   const url = new URL(request.url);
 
   // Check if the request is excluded from caching
-  if (excludedUrls.includes(url.pathname)) {
+  if (excludedUrls.some(endpoint => url.pathname.startsWith(endpoint))) {
       // If the request is to an excluded URL, bypass caching
       evt.respondWith(fetch(request));
       return;

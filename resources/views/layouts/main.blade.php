@@ -27,6 +27,32 @@
 
     <link rel="icon" type="image/png" href="/img/unjanilite.png">
     <title>Berita Unjani - Universitas Jendral Achmad Yani | {{$title}}</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/css/toastr.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/js/toastr.min.js"></script>
+    <script src="https://js.pusher.com/8.2.0/pusher.min.js"></script>
+    <script>
+
+      // Enable pusher logging - don't include this in production
+      Pusher.logToConsole = true;
+
+      var pusher = new Pusher('099b5a22e77e90bb7e59', {
+        cluster: 'ap1'
+      });
+
+      var channel = pusher.subscribe('my-channel');
+      channel.bind('my-event', function(data) {
+        if (data && data.post && data.post.title && data.post.author) {
+          toastr.success('New Post Created', 'Author: ' + data.post.author + '<br>Title: ' + data.post.title, {
+            timeOut: 0,  
+            extendedTimeOut: 0,  
+          });
+        } else {
+          console.error('Invalid data structure received:', data);
+        }
+      });
+    </script>
 </head>
 <body>
     
