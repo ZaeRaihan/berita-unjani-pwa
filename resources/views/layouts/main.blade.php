@@ -189,7 +189,7 @@
                         <ul class="dropdown">
                             <li><a href="/posts" class="nav-link {{ ($active === "posts") ? 'active' : '' }}">ALL POSTS</a></li>
                             <li><a href="/categories" class="nav-link {{ ($active === "categories") ? 'active' : '' }}">KATEGORI</a></li>
-                            <li><a href="/about" class="nav-link {{ ($active === "about") ? 'active' : '' }}">ABOUT US</a></li>
+                            {{-- <li><a href="/about" class="nav-link {{ ($active === "about") ? 'active' : '' }}">ABOUT US</a></li> --}}
                             @if(Auth::check())
                             <li class="has-children">
                                 <a class="nav-link">HALO, {{ Auth::user()->name }}</a>

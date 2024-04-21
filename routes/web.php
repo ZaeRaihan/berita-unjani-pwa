@@ -21,15 +21,15 @@ use App\Http\Controllers\AdminCategoryController;
 
 Route::get('/', [PostController::class, 'index']);
 
-Route::get('/about', function () {
-    return view('about', [
-        "title" => "About",
-        "active" => "about",
-        "name" => "Reza Fahrezi Raihan",
-        "email" => "rezafahrezir20@if.unjani.ac.id",
-        "image" => "reza.png"
-    ]);
-});
+// Route::get('/about', function () {
+//     return view('about', [
+//         "title" => "About",
+//         "active" => "about",
+//         "name" => "Reza Fahrezi Raihan",
+//         "email" => "rezafahrezir20@if.unjani.ac.id",
+//         "image" => "reza.png"
+//     ]);
+// });
 
 
 //halaman all posts
