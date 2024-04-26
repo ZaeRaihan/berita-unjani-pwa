@@ -67,7 +67,7 @@
             </div>            
             
         </div>
-        <a href="/posts" class="btn btn-success mb-3" style="margin-left: 15px"><span data-feather="arrow-left"></span> Kembali</a>
+        <a href="/" class="btn btn-success mb-3" style="margin-left: 15px"><span data-feather="arrow-left"></span> Kembali</a>
     </div>
 </div>
 
