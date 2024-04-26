@@ -708,7 +708,7 @@ footer a {
     color: #0b666a;
 }
 
-/* CSS UNTUK ISI KONTEN DARI CKEDITOR */
+/* CSS UNTUK ISI KONTEN DARI CKEDITOR ALASAN NAVBRAND MOBILE ILANG*/
 @media only screen and (max-width: 1200px) {
     img {
         width: 100% !important;
