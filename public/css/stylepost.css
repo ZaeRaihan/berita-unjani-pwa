@@ -16,8 +16,6 @@
 
 /* Gaya untuk logo mobile */
 .mobile-logo {
-    max-width: 40%; /* Atur lebar maksimum menjadi 40% */
-    height: auto; /* Atur tinggi menjadi otomatis */
     display: none; /* Sembunyikan logo mobile secara default */
 }
 
@@ -45,13 +43,8 @@
         max-width: 60px; /* Atur lebar maksimum logo mobile */
         height: auto; /* Atur tinggi menjadi otomatis */
         position: absolute; /* Ubah posisi menjadi absolut */
-        top: 50%; /* Posisikan di tengah vertikal */
-        margin-top: 8px;
-        left: 0; /* Tempatkan di ujung kiri */
-        transform: translate(
-            -50%,
-            -50%
-        ); /* Geser ke tengah secara horizontal dan vertikal */
+        bottom: 10px; /* Posisikan di bawah */
+        left: 0 !important; /* Tempatkan di ujung kiri */
     }
 }
 
