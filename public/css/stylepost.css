@@ -530,7 +530,7 @@ footer h5 {
 
 footer p {
     margin-bottom: 20px;
-    color: white;
+    color: white !important;
     font-size: small;
 }
 
@@ -545,7 +545,7 @@ footer li {
 }
 
 footer a {
-    color: white;
+    color: white !important;
     text-decoration: none;
 }
 

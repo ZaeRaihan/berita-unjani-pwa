@@ -53,6 +53,13 @@
         }
       });
     </script>
+
+    <style>
+      p{
+          font-family: "Rockwell", serif !important;
+      }
+    </style>
+
 </head>
 <body>
     

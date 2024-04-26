@@ -27,6 +27,13 @@
 
     <link rel="icon" type="image/png" href="/img/unjanilite.png">
     <title>Berita Unjani - Universitas Jendral Achmad Yani | {{$title}}</title>
+
+    <style>
+    footer p {
+      font-family: "Rockwell", serif !important;
+    }
+    </style>
+
 </head>
 <body>
     
