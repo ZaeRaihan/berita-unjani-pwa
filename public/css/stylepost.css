@@ -710,6 +710,10 @@ footer a {
 
 /* CSS UNTUK ISI KONTEN DARI CKEDITOR ALASAN NAVBRAND MOBILE ILANG*/
 @media only screen and (max-width: 1200px) {
+    .navbar-brand img {
+        width: auto !important; /* Atur ulang ke nilai default */
+        height: auto !important; /* Atur ulang ke nilai default */
+    }
     img {
         width: 100% !important;
         height: 100% !important;
