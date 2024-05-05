@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <meta name="description" content="Media berita unjani versi PWA/Progressive Web Apps">
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -64,106 +65,106 @@
                   <li><a href="/" class="nav-link">Home</a></li>
 
                   <li class="has-children">
-                    <a href="#tentang-section" class="nav-link">Tentang</a>
+                    <a href="/" class="nav-link">Tentang</a>
                     <ul class="dropdown">
                         <li class="has-children">
-                            <a href="#">ORGANISASI</a>
+                            <a href="/">ORGANISASI</a>
                             <ul class="dropdown">
-                                <li><a href="#">STRUK ORGANISASI SENAT AKADEMIK</a></li>
-                                <li><a href="#">PIMPINAN DAN PEJABAT UNIVERSITAS</a></li>
+                                <li><a href="/">STRUK ORGANISASI SENAT AKADEMIK</a></li>
+                                <li><a href="/">PIMPINAN DAN PEJABAT UNIVERSITAS</a></li>
                             </ul>
                         </li> <!-- Close the nested li tag -->
                         <li><!-- Open a new li tag -->
-                            <a href="#AKREDITASI-section" class="nav-link">AKREDITASI</a>
+                            <a href="/" class="nav-link">AKREDITASI</a>
                         </li>
                         <li>
-                            <a href="#SENAT-section" class="nav-link">SENAT</a>
+                            <a href="/" class="nav-link">SENAT</a>
                         </li>
                         <li>
-                            <a href="#VISI DAN MISI-section" class="nav-link">VISI DAN MISI</a>
+                            <a href="/" class="nav-link">VISI DAN MISI</a>
                         </li>
                         <li>
-                            <a href="#MAKNA LAMBANG-section" class="nav-link">MAKNA LAMBANG</a>
+                            <a href="/" class="nav-link">MAKNA LAMBANG</a>
                         </li>
                         <li>
-                            <a href="#SEJARAH-section" class="nav-link">SEJARAH</a>
+                            <a href="/" class="nav-link">SEJARAH</a>
                         </li>
                     </ul>
                 </li>                
 
                 <li class="has-children">
-                  <a href="#akademik-section" class="nav-link">Akademik</a>
+                  <a href="/" class="nav-link">Akademik</a>
                   <ul class="dropdown">
                       <li class="has-children">
-                          <a href="#">FAKULTAS</a>
+                          <a href="/">FAKULTAS</a>
                           <ul class="dropdown">
-                              <li><a href="#">TEKNIK</a></li>
-                              <li><a href="#">SAINS DAN INFORMATIKA</a></li>
-                              <li><a href="#">FARMASI</a></li>
-                              <li><a href="#">KEDOKTERAN</a></li>
-                              <li><a href="#">EKONOMI DAN BISNIS</a></li>
-                              <li><a href="#">PSIKOLOGI</a></li>
-                              <li><a href="#">ILMU SOSIAL DAN ILMU POLITIK</a></li>
-                              <li><a href="#">TEKNOLOGI MANUFAKTUR</a></li>
-                              <li><a href="#">KEDOKTERAN GIGI</a></li>
-                              <li><a href="#">ILMU DAN TEKNOLOGI KESEHATAN</a></li>
+                              <li><a href="/">TEKNIK</a></li>
+                              <li><a href="/">SAINS DAN INFORMATIKA</a></li>
+                              <li><a href="/">FARMASI</a></li>
+                              <li><a href="/">KEDOKTERAN</a></li>
+                              <li><a href="/">EKONOMI DAN BISNIS</a></li>
+                              <li><a href="/">PSIKOLOGI</a></li>
+                              <li><a href="/">ILMU SOSIAL DAN ILMU POLITIK</a></li>
+                              <li><a href="/">TEKNOLOGI MANUFAKTUR</a></li>
+                              <li><a href="/">KEDOKTERAN GIGI</a></li>
+                              <li><a href="/">ILMU DAN TEKNOLOGI KESEHATAN</a></li>
                           </ul>
                       </li> <!-- Close the nested li tag -->
                       <li class="has-children">
-                        <a href="#">PROGRAM PROFESI</a>
+                        <a href="/">PROGRAM PROFESI</a>
                         <ul class="dropdown">
-                            <li><a href="#">PROFESI APOTEKER</a></li>
-                            <li><a href="#">PROFESI DOKTER</a></li>
-                            <li><a href="#">PROFESI DOKTER GIGI</a></li>
-                            <li><a href="#">PROFESI NERS</a></li>
-                            <li><a href="#">PROFESI BIDAN</a></li>
+                            <li><a href="/">PROFESI APOTEKER</a></li>
+                            <li><a href="/">PROFESI DOKTER</a></li>
+                            <li><a href="/">PROFESI DOKTER GIGI</a></li>
+                            <li><a href="/">PROFESI NERS</a></li>
+                            <li><a href="/">PROFESI BIDAN</a></li>
                         </ul>
                     </li> <!-- Close the nested li tag -->
                     <li class="has-children">
-                      <a href="#">PROGRAM PASCA SARJANA</a>
+                      <a href="/">PROGRAM PASCA SARJANA</a>
                       <ul class="dropdown">
-                          <li><a href="#">MAGISTER TEKNIK SIPIL</a></li>
-                          <li><a href="#">MAGISTER MANAJEMEN TEKNOLOGI</a></li>
-                          <li><a href="#">MAGISTER MANAJEMEN</a></li>
-                          <li><a href="#">MAGISTER KIMIA</a></li>
-                          <li><a href="#">MAGISTER ILMU PERTAHANAN</a></li>
-                          <li><a href="#">MAGISTER HUBUNGAN INTERNASIONAL</a></li>
-                          <li><a href="#">MAGISTER KEPERAWATAN</a></li>
-                          <li><a href="#">MAGISTER KESEHATAN MASYARAKAT</a></li>
-                          <li><a href="#">MAGISTER FARMASI</a></li>
-                          <li><a href="#">MAGISTER PENUAAN KULIT DAN ESTETIKA</a></li>
+                          <li><a href="/">MAGISTER TEKNIK SIPIL</a></li>
+                          <li><a href="/">MAGISTER MANAJEMEN TEKNOLOGI</a></li>
+                          <li><a href="/">MAGISTER MANAJEMEN</a></li>
+                          <li><a href="/">MAGISTER KIMIA</a></li>
+                          <li><a href="/">MAGISTER ILMU PERTAHANAN</a></li>
+                          <li><a href="/">MAGISTER HUBUNGAN INTERNASIONAL</a></li>
+                          <li><a href="/">MAGISTER KEPERAWATAN</a></li>
+                          <li><a href="/">MAGISTER KESEHATAN MASYARAKAT</a></li>
+                          <li><a href="/">MAGISTER FARMASI</a></li>
+                          <li><a href="/">MAGISTER PENUAAN KULIT DAN ESTETIKA</a></li>
                       </ul>
                   </li> <!-- Close the nested li tag -->
                       <li><!-- Open a new li tag -->
-                          <a href="#SITERPADU-section" class="nav-link">SISTEM INFORMASI AKADEMIK TERPADU</a>
+                          <a href="/" class="nav-link">SISTEM INFORMASI AKADEMIK TERPADU</a>
                       </li>
                       <li>
-                          <a href="#LPPM-section" class="nav-link">LEMBAGA PENELITIAN DAN PENGABDIAN MASYARAKAT (LPPM)</a>
+                          <a href="/" class="nav-link">LEMBAGA PENELITIAN DAN PENGABDIAN MASYARAKAT (LPPM)</a>
                       </li>
                       <li>
-                          <a href="#EJOURNAL-section" class="nav-link">UNJANI E-JOURNAL</a>
+                          <a href="/" class="nav-link">UNJANI E-JOURNAL</a>
                       </li>
                       <li>
-                          <a href="#PERPUSTAKAAN-section" class="nav-link">PERPUSTAKAAN</a>
+                          <a href="/" class="nav-link">PERPUSTAKAAN</a>
                       </li>
                   </ul>
               </li>
               
   
               <li class="has-children">
-                <a href="#maba-section" class="nav-link">Mahasiswa Baru</a>
+                <a href="/" class="nav-link">Mahasiswa Baru</a>
                 <ul class="dropdown">
                     <li><!-- Open a new li tag -->
-                        <a href="#DAFTARMABA-section" class="nav-link">INFO PENDAFTARAN MAHASISWA BARU</a>
+                        <a href="/" class="nav-link">INFO PENDAFTARAN MAHASISWA BARU</a>
                     </li>
                     <li>
-                        <a href="#DAFTARONLINE-section" class="nav-link">PENDAFTARAN ONLINE</a>
+                        <a href="/" class="nav-link">PENDAFTARAN ONLINE</a>
                     </li>
                 </ul>
               </li>
   
               <li class="has-children">
-                <a href="#media-section" class="nav-link">Media</a>
+                <a href="/" class="nav-link">Media</a>
                 <ul class="dropdown">
                     <li class="has-children">
                         <a href="/posts" class="nav-link {{ ($active === "posts" || $active === "categories" || $active === "about") ? 'active' : '' }}">BERITA UNJANI</a>
@@ -190,49 +191,50 @@
                         </ul>
                     </li>
                     <li>
-                        <a href="#DAFTARONLINE-section" class="nav-link">GALLERY UNJANI</a>
+                        <a href="/" class="nav-link">GALLERY UNJANI</a>
                     </li>
                     <li>
-                        <a href="#DAFTARONLINE-section" class="nav-link">YOUTUBE</a>
+                        <a href="/" class="nav-link">YOUTUBE</a>
                     </li>
                 </ul>
               </li>
             
               <li class="has-children">
-                <a href="#kemahasiswaan-section" class="nav-link">Kemahasiswaan</a>
+                <a href="/" class="nav-link">Kemahasiswaan</a>
                 <ul class="dropdown">
                     <li><!-- Open a new li tag -->
-                        <a href="#ATURAN-section" class="nav-link">PERATURAN AKADEMIK</a>
+                        <a href="/" class="nav-link">PERATURAN AKADEMIK</a>
                     </li>
                     <li>
-                        <a href="#ORGANISASI-section" class="nav-link">ORGANISASI MAHASISWA DAN UKM</a>
+                        <a href="/" class="nav-link">ORGANISASI MAHASISWA DAN UKM</a>
                     </li>
                     <li>
-                      <a href="#BEASISWA-section" class="nav-link">INFO BEASISWA</a>
+                      <a href="/" class="nav-link">INFO BEASISWA</a>
                   </li>
                   <li>
-                    <a href="#PRESTASI-section" class="nav-link">PRESTASI MAHASISWA</a>
+                    <a href="/" class="nav-link">PRESTASI MAHASISWA</a>
                 </li>
                 </ul>
               </li>
   
-                  <li><a href="#kerjasama-section" class="nav-link">Kerjasama</a></li>
+                  <li><a href="/" class="nav-link">Kerjasama</a></li>
   
                   <li class="social">
-                    <a href="#contact-section" class="nav-link"
-                      ><span class="fab fa-facebook"></span
-                    ></a>
+                    <a href="/" class="nav-link" aria-label="Facebook">
+                      <span class="fab fa-facebook"></span>
+                    </a>
                   </li>
                   <li class="social">
-                    <a href="#contact-section" class="nav-link"
-                      ><span class="fab fa-instagram"></span
-                    ></a>
+                    <a href="/" class="nav-link" aria-label="Instagram">
+                      <span class="fab fa-instagram"></span>
+                    </a>
                   </li>
                   <li class="social">
-                    <a href="#contact-section" class="nav-link"
-                      ><span class="fab fa-youtube"></span
-                    ></a>
+                    <a href="/" class="nav-link" aria-label="YouTube">
+                      <span class="fab fa-youtube"></span>
+                    </a>
                   </li>
+                  
                 </ul>
               </nav>
             </div>
@@ -241,8 +243,9 @@
               class="col-6 d-inline-block d-xl-none ml-md-0 py-3"
               style="position: relative; top: 3px"
             >
-              <a href="#" class="site-menu-toggle js-menu-toggle float-right"
-                ><span class="fas fa-bars fa-lg"></span></a>
+            <a href="/" class="site-menu-toggle js-menu-toggle float-right" aria-label="Toggle Site Menu">
+              <span class="fas fa-bars fa-lg"></span>
+            </a>
             </div>
           </div>
         </div>
@@ -268,11 +271,11 @@
           </div>
           <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="sr-only"></span>
-          </a>
+            <span class="sr-only">Previous Slide</span>
+         </a> 
           <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
             <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="sr-only"></span>
+            <span class="sr-only">Next Slide</span>
           </a>
         </div>
       </div>
@@ -290,15 +293,15 @@
       <div class="container">
           <div class="row">
               <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
-                  <h5 class="text-uppercase">KAMPUS CIMAHI UNJANI</h5>
+                  <h1 class="text-uppercase" style="font-size: medium">KAMPUS CIMAHI UNJANI</h1>
                   <p>Jl. Terusan Jend. Sudirman, Cibeber, Kec. Cimahi Sel., Kota Cimahi, Jawa Barat</p>
               </div>
               <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
-                <h5 class="text-uppercase">KAMPUS BANDUNG UNJANI</h5>
+                <h1 class="text-uppercase" style="font-size: medium">KAMPUS BANDUNG UNJANI</h1>
                 <p>Jl. Terusan Jenderal Gatot Subroto PO Box 807 Bandung, Jawa Barat</p>
             </div>
             <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
-              <h5 class="text-uppercase">HUBUNGI KAMI</h5>
+              <h1 class="text-uppercase" style="font-size: medium">HUBUNGI KAMI</h1>
               <ul class="list-unstyled">
                   <li><span class="fab fa-whatsapp"></span> 022-6656190 (Call)</li>
                   <li><span class="fab fa-facebook"></span> PMB 0811 249 7890 (WA only)</li>
@@ -307,19 +310,19 @@
               </ul>
           </div>          
               <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
-                <h5 class="text-uppercase">MORE</h5>
+                <h1 class="text-uppercase" style="font-size: medium">MORE</h1>
                 <ul class="list-inline" style="padding-left: 0;">
-                    <li class="list-inline-item" style="font-size: large"><a href="#"><span class="fab fa-facebook"></span></a></li>
-                    <li class="list-inline-item" style="font-size: large"><a href="#"><span class="fab fa-instagram"></span></a></li>
-                    <li class="list-inline-item" style="font-size: large"><a href="#"><span class="fab fa-twitter"></span></a></li>
+                    <li class="list-inline-item" style="font-size: large"><a href="/"><span class="fab fa-facebook"></span></a></li>
+                    <li class="list-inline-item" style="font-size: large"><a href="/"><span class="fab fa-instagram"></span></a></li>
+                    <li class="list-inline-item" style="font-size: large"><a href="/"><span class="fab fa-twitter"></span></a></li>
                 </ul>
             </div>
           </div>
       </div>
       <div class="copyright d-flex flex-column align-items-center justify-content-center py-2">
         <p class="text-muted my-auto" style="font-size: x-small">PUSSISFO © Copyright 2020 - UNJANI - All Rights Reserved</p>
-    </div>
-  </footer>
+      </div>
+    </footer>
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>

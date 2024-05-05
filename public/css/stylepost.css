@@ -514,11 +514,10 @@ footer {
     position: relative; /* Jadikan posisi relatif untuk memposisikan copyright */
 }
 
-footer h5 {
+footer h1 {
     margin-bottom: 20px;
     color: white;
-    font-weight: bold;
-    font-size: medium;
+    font-weight: bold !important;
 }
 
 footer p {
@@ -562,7 +561,7 @@ footer a {
         padding: 10px; /* Add padding for better mobile view */
     }
 
-    footer h5 {
+    footer h1 {
         text-align: center; /* Center-align heading text */
     }
 

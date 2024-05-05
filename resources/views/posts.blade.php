@@ -43,11 +43,11 @@
                                 <a href="https://www.unjani.ac.id/">Home</a> / <a href="/posts?author={{ $post->author->username }}">{{ $post->author->name }}</a> - {{ \Carbon\Carbon::parse($post->created_at)->locale('id')->isoFormat('MMMM D, YYYY') }}
                             </small>
                         </p>
-                        <h6 class="card-title">
+                        <h1 class="card-title" style="font-size: medium">
                             <a href="/posts/{{ $post->slug }}">
                                 <?php echo strlen($post->title) > 100 ? substr($post->title, 0, 100) . '...' : $post->title; ?>
                             </a>
-                        </h6>
+                        </h1>
                         
                         <p class="card-text excerpt">{!! strlen($post->excerpt) > 100 ? substr($post->excerpt, 0, 100) . '...' : $post->excerpt !!}</p>
                     </div>
