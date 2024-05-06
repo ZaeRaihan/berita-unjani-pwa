@@ -24,7 +24,7 @@
                     </div>
                     @else
                     <div style="overflow:hidden;">
-                        <img src="https://source.unsplash.com/1200x400?{{ $post->category->name }}" alt="{{ $post->category->name }}" class="img-fluid">
+                        <img src="/img/news.webp" alt="{{ $post->category->name }}" class="img-fluid">
                     </div>
                     @endif
 

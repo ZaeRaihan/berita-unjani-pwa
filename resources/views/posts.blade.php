@@ -34,7 +34,7 @@
                     </div>
                     @else
                     <div class="img-container">
-                        <img src="https://source.unsplash.com/500x400?{{ $post->category->name }}" alt="{{ $post->category->name }}" class="img-fluid">
+                        <img src="/img/news.webp" alt="{{ $post->category->name }}" class="img-fluid">
                     </div>
                     @endif
                     <div class="card-body">
