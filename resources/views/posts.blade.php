@@ -30,11 +30,11 @@
                     </div>
                     @if ($post->image)
                     <div class="img-container">
-                        <img src="{{ asset('storage/' . $post->image) }}" alt="{{ $post->category->name }}" class="img-fluid">
+                        <img data-src="{{ asset('storage/' . $post->image) }}" alt="{{ $post->category->name }}" class="img-fluid lazyload">
                     </div>
                     @else
                     <div class="img-container">
-                        <img src="/img/news.webp" alt="{{ $post->category->name }}" class="img-fluid">
+                        <img data-src="/img/news.webp" alt="{{ $post->category->name }}" class="img-fluid lazyload">
                     </div>
                     @endif
                     <div class="card-body">

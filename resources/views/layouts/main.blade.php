@@ -10,7 +10,7 @@
     <link rel="apple-touch-icon" href="{{ asset('logo.PNG') }}">
     <link rel="manifest" href="{{ asset('/manifest.json') }}">
 
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&display=swap"/>
 
     <!-- ICON -->
     <link rel="stylesheet" href="/icomoon/style.css" /> 
@@ -29,10 +29,10 @@
     <link rel="icon" type="image/png" href="/img/unjanilite.webp">
     <title>Berita Unjani - Universitas Jendral Achmad Yani | {{$title}}</title>
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/css/toastr.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/css/toastr.min.css" fetchpriority="low">
     <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/js/toastr.min.js"></script>
-    <script src="https://js.pusher.com/8.2.0/pusher.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/js/toastr.min.js" async></script>
+    <script src="https://js.pusher.com/8.2.0/pusher.min.js" async></script>
     <script>
 
       // Enable pusher logging - don't include this in production
@@ -79,8 +79,8 @@
             <div class="col-6 col-xl-2">
               <h1 class="mb-3 site-logo">
                 <a href="/" class="navbar-brand">
-                  <img src="/img/unjani3.webp" alt="Desktop Logo" class="desktop-logo">
-                  <img src="/img/unjanilite.webp" alt="Mobile Logo" class="mobile-logo">
+                  <img src="/img/unjani3.webp" alt="Desktop Logo" class="desktop-logo" loading="lazy">
+                  <img src="/img/unjanilite.webp" alt="Mobile Logo" class="mobile-logo" loading="lazy">
                 </a>
               </h1>            
             </div>            
@@ -286,13 +286,13 @@
           </ol>
           <div class="carousel-inner">
             <div class="carousel-item active">
-              <img src="/img/unjanismart.webp" class="d-block w-100" alt="...">
+              <img fetchpriority="high" src="/img/unjanismart.webp" class="d-block w-100" alt="...">
             </div>
             <div class="carousel-item">
-              <img src="/img/unjanismart.webp" class="d-block w-100" alt="...">
+              <img fetchpriority="high" src="/img/unjanismart.webp" class="d-block w-100" alt="...">
             </div>
             <div class="carousel-item">
-              <img src="/img/unjanismart.webp" class="d-block w-100" alt="...">
+              <img fetchpriority="high" src="/img/unjanismart.webp" class="d-block w-100" alt="...">
             </div>
           </div>
           <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
@@ -349,6 +349,8 @@
         <p class="text-muted my-auto" style="font-size: x-small">PUSSISFO © Copyright 2020 - UNJANI - All Rights Reserved</p>
     </div>
   </footer>
+    <!--for lazyload content-->
+    <script src="/js/lazysizes.min.js" async><script>
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
