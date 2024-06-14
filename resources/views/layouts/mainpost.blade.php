@@ -53,10 +53,11 @@
             <div class="col-6 col-xl-2">
               <h1 class="mb-3 site-logo">
                 <a href="/" class="navbar-brand">
-                  <img src="/img/unjani3.webp" alt="Desktop Logo" class="desktop-logo">
-                  <img src="/img/unjanilite.webp" alt="Mobile Logo" class="mobile-logo">
+                    <img src="/img/unjani3.webp" alt="Desktop Logo" class="desktop-logo" loading="lazy">
+                    <img src="/img/unjanilite.webp" alt="Mobile Logo" class="mobile-logo" loading="lazy">
+                    <span class="mobile-text">Universitas<br>Jenderal Achmad Yani</span>
                 </a>
-              </h1>            
+              </h1>          
             </div>            
   
             <div class="col-12 col-md-10 d-none d-xl-block">

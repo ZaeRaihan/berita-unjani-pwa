@@ -1,17 +1,21 @@
 /* Gaya untuk navbar brand */
 .navbar-brand {
     position: absolute;
-    top: 0; /* Posisikan di bagian atas halaman */
+    top: 0;
     left: 50%;
     transform: translateX(-50%);
-    padding: 36px 0; /* Sesuaikan nilai padding sesuai kebutuhan, tambahkan ruang di atas */
+    padding: 36px 0;
 }
 
 /* Gaya untuk logo desktop */
 .desktop-logo {
-    max-width: 3.5cm; /* Atur ukuran maksimum lebar */
-    max-height: 3.5cm; /* Atur ukuran maksimum tinggi */
-    display: block; /* Tampilkan sebagai blok */
+    max-width: 3.5cm;
+    max-height: 3.5cm;
+    display: block;
+    position: absolute; /* Ensure the desktop logo is positioned correctly */
+    top: 50%; /* Center vertically */
+    left: 50%; /* Center horizontally */
+    transform: translate(-50%, -50%); /* Adjust to exact center */
 }
 
 /* Gaya untuk logo mobile */
@@ -19,19 +23,27 @@
     display: none; /* Sembunyikan logo mobile secara default */
 }
 
-/* Gaya untuk memposisikan logo agar berada di tengah secara vertikal */
-.navbar-brand img {
-    position: absolute;
-    top: 50%; /* Posisikan di tengah vertikal */
-    left: 50%;
-    transform: translate(-50%, -50%);
+/* Gaya untuk teks mobile */
+.mobile-text {
+    display: none; /* Sembunyikan teks secara default */
+    font-size: 12px;
+    color: #333;
+    padding-top: 10px;
+    margin-left: 10px;
+    font-weight: bold;
+    white-space: nowrap;
 }
 
 /* Gaya untuk navbar brand pada tampilan mobile */
 @media (max-width: 767px) {
     .navbar-brand {
-        position: relative; /* Ubah posisi menjadi relatif */
-        padding: 0 15px; /* Atur padding untuk memberi ruang di sisi kiri dan kanan */
+        position: relative;
+        padding: 0 15px;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        left: auto; /* Reset left */
+        transform: none; /* Reset transform */
     }
 
     .desktop-logo {
@@ -39,12 +51,15 @@
     }
 
     .mobile-logo {
-        display: block; /* Tampilkan logo mobile pada tampilan mobile */
-        max-width: 60px; /* Atur lebar maksimum logo mobile */
-        height: auto; /* Atur tinggi menjadi otomatis */
-        position: absolute; /* Ubah posisi menjadi absolut */
-        bottom: 10px; /* Posisikan di bawah */
-        left: 0 !important; /* Tempatkan di ujung kiri */
+        display: block;
+        max-width: 60px;
+        height: auto;
+        position: relative;
+    }
+
+    .mobile-text {
+        display: block;
+        margin-left: 10px;
     }
 }
 
